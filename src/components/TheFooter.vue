@@ -5,14 +5,14 @@
                 <div class="col-2 d-flex justify-content-center">
                     <img src="../assets/images/author-logo-round-small.png" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-2">
                     <h4>ABOUT ME</h4>
                     <P class="font-footer">
                         Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malesuada
                         feugiat. Vivamus suscipit tortor eget felis porttitor volutpat.
                     </P>
                 </div>
-                <div class="col-3">
+                <div class="col-3 offset-1">
                     <h4>USEFUL LINKS</h4>
                     <ul>
                         <li class="font-footer" li v-for="link in links" :key="link">
