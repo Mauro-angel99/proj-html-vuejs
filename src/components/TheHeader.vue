@@ -26,43 +26,43 @@
             <font-awesome-icon class="icon" icon="fa-solid fa-arrow-right" />
           </div>
         </div>
-        <div class="col-6 position-relative">
-          <div class="labels">
-            <div id="demos">
-              <font-awesome-icon class="folder" icon="fa-solid fa-folder" />
-              <span>Demos</span>
-            </div>
-            <div id="label">
-              <div id="price">
-                <span class="dollar">$</span>
-                <span class="number">39</span>
-              </div>
-              <span class="on-sale">On Sale</span>
-            </div>
+      </div>
+      <div>
+        <div class="labels">
+          <div id="demos">
+            <font-awesome-icon class="folder" icon="fa-solid fa-folder" />
+            <span>Demos</span>
           </div>
-          <div id="book">
-            <div class="row">
-              <div class="col-6 d-flex justify-content-end align-items-center">
-                <img src="../assets/images/book-widget.png" alt="">
-              </div>
-              <div class="col-6">
-                <h4>Latest Book Release</h4>
-                <span>D. VAUGHN AUTOBIOGRAPHY</span>
-                <P>Vestibulum tristique turpis in ipsum egestas lobortis. Duis maximus bibendum volutpat. Lorem ipsum
-                  dolor sit amet.
-                </P>
-              </div>
+          <div id="label">
+            <div id="price">
+              <span class="dollar">$</span>
+              <span class="number">39</span>
             </div>
-            <div id="buy-button" class="col-12 d-flex justify-content-center">
-              <div>
-                <button class="amazon">
-                  <font-awesome-icon class="icon" icon="fa-brands fa-amazon" />Buy on amazon
-                </button>
-                <button class="apple">
-                  <font-awesome-icon class="icon" icon="fa-brands fa-apple" />Buy on AppleStore
-                </button>
-              </div>
-            </div>
+            <span class="on-sale">On Sale</span>
+          </div>
+        </div>
+      </div>
+      <div id="book">
+        <div class="row">
+          <div class="col-6 d-flex justify-content-end align-items-center">
+            <img src="../assets/images/book-widget.png" alt="">
+          </div>
+          <div class="col-6">
+            <h4>Latest Book Release</h4>
+            <span>D. VAUGHN AUTOBIOGRAPHY</span>
+            <P>Vestibulum tristique turpis in ipsum egestas lobortis. Duis maximus bibendum volutpat. Lorem ipsum
+              dolor sit amet.
+            </P>
+          </div>
+        </div>
+        <div id="buy-button" class="col-12 d-flex justify-content-center">
+          <div>
+            <button class="amazon">
+              <font-awesome-icon class="icon" icon="fa-brands fa-amazon" />Buy on amazon
+            </button>
+            <button class="apple">
+              <font-awesome-icon class="icon" icon="fa-brands fa-apple" />Buy on AppleStore
+            </button>
           </div>
         </div>
       </div>
@@ -124,6 +124,11 @@ header {
 
       .icon-shop {
         color: white;
+
+        &:hover {
+          color: #936c0f;
+          cursor: pointer;
+        }
       }
     }
 
@@ -173,7 +178,8 @@ header {
 .labels {
   width: 60px;
   position: absolute;
-  right: -100px;
+  right: 0px;
+  top: 150px;
 
 }
 
@@ -231,15 +237,18 @@ header {
 
 #book {
   position: absolute;
-  right: -108px;
-  bottom: -97px;
+  right: 0;
+  top: 300px;
   height: 300px;
   width: 600px;
   background-color: white;
   display: flex;
   flex-direction: column;
-
   justify-content: end;
+
+  .row {
+    max-width: 600px;
+  }
 
   img {
     height: 200px;
