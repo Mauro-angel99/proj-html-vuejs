@@ -8,12 +8,16 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { faFolder } from '@fortawesome/free-solid-svg-icons'
 import { faAmazon } from '@fortawesome/free-brands-svg-icons'
 import { faApple } from '@fortawesome/free-brands-svg-icons'
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+
 library.add(faCartShopping)
 library.add(faArrowRight)
 library.add(faArrowLeft)
 library.add(faFolder)
 library.add(faAmazon)
 library.add(faApple)
+library.add(faAngleRight)
+
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
