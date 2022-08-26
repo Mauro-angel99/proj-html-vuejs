@@ -16,16 +16,15 @@
                     <h4>USEFUL LINKS</h4>
                     <ul>
                         <li class="font-footer" li v-for="link in links" :key="link">
-                            <font-awesome-icon class="arrow" icon="fa-solid fa-angle-right" /> {{
-                                    link
-                            }}
+                            <font-awesome-icon class="arrow" icon="fa-solid fa-angle-right" /><a href="#">{{ link }}</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-3">
                     <h4>CONTACT INFO</h4>
                     <ul class="p-0">
-                        <li class="font-footer" v-for="contact in contacts" :key="contact">{{ contact }}</li>
+                        <li class="font-footer" v-for="contact in contacts" :key="contact"><a href="#">{{ contact }}</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -86,6 +85,11 @@ footer {
     .font-footer {
         font-size: 12px;
         line-height: 25px;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
     }
 
     #copy {
